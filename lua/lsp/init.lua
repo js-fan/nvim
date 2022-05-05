@@ -10,7 +10,6 @@ local servers = {
 for server_name, _ in pairs(servers) do
     local is_found, server = lsp_installer.get_server(server_name)
     if is_found and (not server:is_installed()) then
-        print("Installing LSP server: " .. name)
         server:install()
     end
 end
