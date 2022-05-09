@@ -41,7 +41,10 @@ return require('packer').startup(function()
   -- themes
   use {
     'navarasu/onedark.nvim',
-    'EdenEast/nightfox.nvim'
+    'EdenEast/nightfox.nvim',
+    'NLKNguyen/papercolor-theme',
+    'sainnhe/everforest',
+    'sainnhe/sonokai'
   }
 
   -- treesitter

@@ -13,16 +13,23 @@ require('nvim-cmp')  -- completation
 require('keymap').setup()
 
 -- themes
-require('onedark').setup {
-    -- dark, darker, cool, deep, warm, warmer
-    style = 'dark'
+local themes = require('themes')
+-- themes.set_onedark('darker')
+-- themes.set_nordfox('nordfox')
+themes.set_sonokai('atlantis')
+
+
+
+require('lualine').setup {
+    tabline = {
+        lualine_a = {},
+        lualine_b = {'buffers'},
+        lualine_c = {},
+        lualine_x = {},
+        lualine_y = {'tabs'},
+        lualine_z = {}
+    }
 }
-require('onedark').load()
-
--- nightfox, dayfox, dawnfox, duskfox, nordfox, terafox
--- vim.cmd('colorscheme nordfox')
-
-require('lualine').setup()
 vim.api.nvim_exec(
 [[
 hi LspReferenceText gui=inverse
