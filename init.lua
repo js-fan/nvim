@@ -15,8 +15,8 @@ require('keymap').setup()
 -- themes
 local themes = require('themes')
 -- themes.set_onedark('darker')
--- themes.set_nordfox('nordfox')
-themes.set_sonokai('atlantis')
+themes.init()
+themes.set('nordfox')
 
 
 
