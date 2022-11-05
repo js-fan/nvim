@@ -15,7 +15,8 @@ for server_name, _ in pairs(servers) do
 end
 
 -- nvim-cmp
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+-- local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local lsp_keymap = require('keymap').lsp_keymap
 
